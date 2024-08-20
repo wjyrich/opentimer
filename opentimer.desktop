@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Accessibility;Qt;Utility;
+Exec=opentimer
+Name=opentimer
+Name[zh_CN]=opentimer
+Icon=opentimer
+StartupNotify=false
+Terminal=false
+Type=Application
+GenericName=opentimer
+Version=1.0

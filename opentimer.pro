@@ -17,9 +17,16 @@ FORMS += \
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
+else: unix:!android: #target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+target.path = $$PREFIX/bin
+desktop.files = opentimer.desktop
+desktop.path = $$PREFIX/share/applications/
+icons.path = $$PREFIX/share/icons
+icons.files = opentimer.png
+
+INSTALLS += target desktop icons
 RESOURCES += \
     resources.qrc
 
